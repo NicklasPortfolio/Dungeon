@@ -166,6 +166,7 @@
             this.enemySkull1.Size = new System.Drawing.Size(75, 75);
             this.enemySkull1.TabIndex = 4;
             this.enemySkull1.TabStop = false;
+            this.enemySkull1.MouseEnter += new System.EventHandler(this.enemySkull2_MouseEnter);
             // 
             // pictureBox5
             // 
@@ -289,6 +290,7 @@
             this.enemySkull2.Size = new System.Drawing.Size(75, 75);
             this.enemySkull2.TabIndex = 15;
             this.enemySkull2.TabStop = false;
+            this.enemySkull2.MouseEnter += new System.EventHandler(this.enemySkull2_MouseEnter);
             // 
             // pictureBox16
             // 
@@ -323,6 +325,7 @@
             this.enemySkull3.Size = new System.Drawing.Size(93, 93);
             this.enemySkull3.TabIndex = 18;
             this.enemySkull3.TabStop = false;
+            this.enemySkull3.MouseEnter += new System.EventHandler(this.enemySkull2_MouseEnter);
             // 
             // staticEnemySkull
             // 
@@ -335,6 +338,7 @@
             this.staticEnemySkull.Size = new System.Drawing.Size(75, 75);
             this.staticEnemySkull.TabIndex = 19;
             this.staticEnemySkull.TabStop = false;
+            this.staticEnemySkull.MouseEnter += new System.EventHandler(this.staticEnemySkull_MouseEnter);
             // 
             // staticSword
             // 

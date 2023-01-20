@@ -43,6 +43,15 @@ namespace Dungeon
             staticScroll.Visible = false;
             lblNoteCode.Text = $"The note contained a code! \n \n {Globals.doorCode}";
         }
+        private void enemySkull2_MouseEnter(object sender, EventArgs e)
+        {
+            // MessageBox.Show("Oh no! The skull got you! Game over.");
+            // this.Close();
+        }
+        private void staticEnemySkull_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
 
         private void timerMover_Tick(object sender, EventArgs e)
         {
