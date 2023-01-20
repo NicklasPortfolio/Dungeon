@@ -32,45 +32,54 @@ namespace Dungeon
             Cursor.Position = new Point(button1.Location.X+Left+button1.Width/2+5, button1.Location.Y+Top+button1.Height/2+30);
         }
 
-        private void timerMover_Tick(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Form1_MouseEnter(object sender, EventArgs e)
         {
-            MessageBox.Show("Du förlorade skallespelet!");
-            this.Close();
+            //MessageBox.Show("You fell down into the abyss! You lose!");
+            //this.Close();
         }
 
-        int counter = 0;
-        int top = 122;
-        int bottom = 260;
-        bool _firstRun = true;
-        int staticLocationX = 444;
-
-        private void skalle1Mover(object sender, EventArgs e)
+        private void staticScroll_MouseEnter(object sender, EventArgs e)
         {
-            if (_firstRun && counter == 0)
+            staticScroll.Visible = false;
+            lblNoteCode.Text = $"The note contained a code! \n \n {Globals.doorCode}";
+        }
+
+        private void timerMover_Tick(object sender, EventArgs e)
+        {
+            skalle1Mover();
+        }
+
+
+        private int counter = 0;
+        private int staticLocationX = 296;
+        private bool _firstRun = true;
+        private bool _movingDown = false;
+        private bool _movingUp = false; // Variables for skalle1Mover
+
+        private void skalle1Mover()
+        {
+            if (_firstRun)
             {
                 counter++;
                 _firstRun = false;
-                enemySkull1.Location = new Point(staticLocationX, enemySkull1.Location.Y+1);   
+                _movingDown = true;
+                enemySkull1.Location = new Point(staticLocationX, enemySkull1.Location.Y + 1);   
             }
 
-            if (counter > 0)
+            if (_movingDown)
             {
                 enemySkull1.Location = new Point(staticLocationX, enemySkull1.Location.Y + 1);
                 counter++;
-                if (counter == 69) { counter = -1; }
+                if (counter == 69) { _movingUp = true; _movingDown = false; }
             }
 
-            if (counter < 0)
+            if (_movingUp)
             {
                 enemySkull1.Location = new Point(staticLocationX, enemySkull1.Location.Y - 1);
                 counter--;
-                if (counter == -69) { counter = 1; }
+                if (counter == -69) { _movingDown = true; _movingUp = false; }
             }
+            return;
         }
     }
 }
