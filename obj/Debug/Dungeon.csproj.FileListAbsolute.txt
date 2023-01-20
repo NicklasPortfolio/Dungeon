@@ -1,0 +1,24 @@
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\bin\Debug\Dungeon.exe.config
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\bin\Debug\Dungeon.exe
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\bin\Debug\Dungeon.pdb
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.csproj.AssemblyReference.cache
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.csproj.SuggestedBindingRedirects.cache
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.Form1.resources
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.Properties.Resources.resources
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.csproj.GenerateResource.cache
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.csproj.CoreCompileInputs.cache
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.exe
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.pdb
+C:\Users\Namn\Documents\Programming 1 Home\Dungeon\Dungeon\obj\Debug\Dungeon.Form2.resources
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\bin\Debug\Dungeon.exe.config
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\bin\Debug\Dungeon.exe
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\bin\Debug\Dungeon.pdb
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.csproj.AssemblyReference.cache
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.csproj.SuggestedBindingRedirects.cache
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.Form1.resources
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.Form2.resources
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.Properties.Resources.resources
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.csproj.GenerateResource.cache
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.csproj.CoreCompileInputs.cache
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.exe
+C:\Users\nicklas.svensson\Documents\Programmering 1\DungeonDarr\Dungeon\obj\Debug\Dungeon.pdb
