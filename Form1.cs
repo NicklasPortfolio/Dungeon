@@ -60,7 +60,7 @@ namespace Dungeon
 
 
         private int counter = 0;
-        private int staticLocationX = 296;
+        private readonly int staticLocationX = 296;
         private bool _firstRun = true;
         private bool _movingDown = false;
         private bool _movingUp = false; // Variables for skalle1Mover
