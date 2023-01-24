@@ -43,6 +43,8 @@ namespace Dungeon
 
             // Flyttar muspekaren till start positionen när Form1 laddas in.
             Cursor.Position = new Point(button1.Location.X+Left+button1.Width/2+5, button1.Location.Y+Top+button1.Height/2+30);
+
+            lblHS.Text = $"HIGHSCORE: {highscore}";
         }
 
         // Denna funktionen gör så att om spelaren rör sig utanför de vita linjerna så dör de
