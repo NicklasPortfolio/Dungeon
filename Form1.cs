@@ -169,7 +169,7 @@ namespace Dungeon
         {
             if (time < highscore)
             {
-                File.WriteAllText("Highscore.txt", highscore.ToString());
+                File.WriteAllText("Highscore.txt", time.ToString());
                 MessageBox.Show("You got a new record, congrats!");
             }
             else { MessageBox.Show("You won! Congrats! No new record though..."); }
