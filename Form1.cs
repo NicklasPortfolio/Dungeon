@@ -23,6 +23,7 @@ namespace Dungeon
         bool gotKey_ = false;
         int points = 0;
         int time = 0;
+        int highscore = int.Parse(File.ReadAllText("Highscore.txt"));
 
         public static class Globals
         {
@@ -47,15 +48,15 @@ namespace Dungeon
         // Denna funktionen gör så att om spelaren rör sig utanför de vita linjerna så dör de
         private void Form1_MouseEnter(object sender, EventArgs e)
         {
-            //MessageBox.Show("You fell down into the abyss! You lose!");
-            //this.Close();
+            MessageBox.Show("You fell down into the abyss! You lose!");
+            this.Close();
         }
 
         // Gör så att alla skallar som flyttar på sig dödar spelaren om den
         private void enemySkull(object sender, EventArgs e)
         {
-            // MessageBox.Show("Oh no! The skull got you! Game over.");
-            // this.Close();
+            MessageBox.Show("Oh no! The skull got you! Game over.");
+            this.Close();
         }
 
         // Gör så att alla skallar flyttar på sig varje frame
@@ -91,6 +92,7 @@ namespace Dungeon
 
         int moveCoefficientX = 1;
         int moveCoefficientY = 1;
+
         // skull2Mover använder också ett counter system, dock lite mer optimiserat än skull1Mover
         private void skull2Mover()
         {
@@ -162,14 +164,16 @@ namespace Dungeon
             lblPoints.Text = $"POÄNG: {points}";
         }
 
+        // Hanterar vad som händer när man når slutet på spelet, har man fått en ny rekord tid så sparas ens highscore i en textfil.
         private void button2_MouseEnter(object sender, EventArgs e)
         {
-            StreamWriter file = File.AppendText("Highscore.txt");
-
-            Console.WriteLine(File.ReadAllLines("Highscore.txt"));
-            
-
-
+            if (time < highscore)
+            {
+                File.WriteAllText("Highscore.txt", highscore.ToString());
+                MessageBox.Show("You got a new record, congrats!");
+            }
+            else { MessageBox.Show("You won! Congrats! No new record though..."); }
+            this.Close();
         }
     }
 }
